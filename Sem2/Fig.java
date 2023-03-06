@@ -5,8 +5,6 @@ public abstract class Fig {
     protected int b;
     protected int c;
     protected String name;
-    // interface TheSum{}
-    // abstract double Perimeter();
     abstract double Square();
     public Fig(){};
     @Override

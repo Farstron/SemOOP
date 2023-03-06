@@ -1,13 +1,12 @@
 package Sem2;
 
 public class Сircle extends Fig{
-    // private int r;
     public Сircle(int r){
         super.a = r;
         super.name = "Круг";
     }
     public Сircle(){
-        this(2);
+        this(5);
         super.name = "Круг";
     }
     public double length(int r){
