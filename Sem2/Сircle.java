@@ -4,20 +4,22 @@ public class Сircle extends Fig{
     // private int r;
     public Сircle(int r){
         super.a = r;
+        super.name = "Круг";
     }
     public Сircle(){
         this(2);
+        super.name = "Круг";
     }
-    public int length(int r){
+    public double length(int r){
         double l = (int)2*Math.PI*r;
-        return (int)l;
-    }
-    @Override
-    double Perimeter() {
-        return length(super.a);
+        return l;
     }
     @Override
     double Square() {
         return Math.PI*super.a*super.a;
+    }
+    @Override
+    public String toString() {
+        return String.format("%s\nДлина окружности: %.1f\n", super.toString(),this.length(super.a));
     }
 }
