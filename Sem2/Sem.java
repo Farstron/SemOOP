@@ -16,7 +16,7 @@ public class Sem {
         System.out.println(String.format("Area: %f", figure.area()));
         if(figure instanceof Perimeterable){
             Perimeterable perimeterable = (Perimeterable)figure;
-            System.out.println(String.format("Length: %f", perimeterable.perimeter()));
+            System.out.println(String.format("Perimeter: %f", perimeterable.perimeter()));
         }
         if(figure instanceof Lengthable){
             Lengthable lengthable = (Lengthable)figure;
